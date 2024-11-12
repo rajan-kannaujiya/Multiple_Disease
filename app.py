@@ -66,7 +66,8 @@ if selected == 'Heart Disease Prediction':
 		pred= heart_model.predict([user_input])[0]
 		heart_diagnosis = 'The Person is Having Heart Disease' if pred==1 else 'The Person is does not have Heart Disease'
 		st.success(heart_diagnosis)
-
+# Add a footer using Markdown
+st.markdown(""" --- © 2024 RajanKannaujiya. All rights reserved.""")
 	
 
 
